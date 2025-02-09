@@ -12,3 +12,14 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+
+
+model Planet {
+  id           Int      @id @default(autoincrement())
+  nombre       String   @unique
+  temperatura  Float?   // Usamos Float para la temperatura
+  composicion  String?  // Puede ser un String si es un valor libre
+  gravedad     Float?   // Usamos Float para la gravedad
+  habitabilidad Boolean? // Usamos Boolean para indicar si es habitable
+}
