@@ -35,6 +35,7 @@ class Planets():
         return [self.name, self.temperatura, self.gravedad, self.habitabilidad, self.composicion]
 
 def generarDataRandomPlanetas(cantidad=10):
+    """Genera planetas aleatorios y devuelve una lista de instancias de Planets."""
     planetasSeleccionados = set()
     planetas = []
     
@@ -48,12 +49,10 @@ def generarDataRandomPlanetas(cantidad=10):
     return planetas
 
 def guardar_csv(planetas, csv_planets):
-    with open(csv_planets, mode="w", newline="") as file:
+    """Guarda los planetas generados en un archivo CSV."""
+    with open(csv_planets, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow(["Nombre", "Temperatura", "Gravedad", "Habitabilidad", "Composición"])
+        writer.writerow(["nombre", "temperatura", "gravedad", "habitabilidad", "composición"])
         for planeta in planetas:
             writer.writerow(planeta.to_list())
     print("CSV generado")
-
-planetas_generados = generarDataRandomPlanetas(6)
-guardar_csv(planetas_generados, "planetas.csv")

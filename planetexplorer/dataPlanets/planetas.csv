@@ -1,7 +1,7 @@
-Nombre,Temperatura,Gravedad,Habitabilidad,Composición
-Alfafar,-20.64,28.07,True,Gaseoso
-Valencia,-177.47,16.75,False,Hielo
-Torrent,-27.49,6.23,True,Gaseoso
-Alicante,-24.56,0.95,True,Gaseoso
-Alzira,-20.06,23.27,True,Metálico
-Castellon,-48.45,24.29,True,Rocoso
+nombre,temperatura,gravedad,habitabilidad,composiciÃ³n
+Torrent,-41.32,10.09,True,Gaseoso
+Alfafar,365.23,29.35,False,Gaseoso
+Alicante,385.97,27.33,False,Gaseoso
+Valencia,6.53,2.63,True,Gaseoso
+Alzira,-22.62,0.83,True,Rocoso
+Castellon,234.6,3.88,False,Gaseoso
