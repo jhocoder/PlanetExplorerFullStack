@@ -1,7 +1,7 @@
 import sqlite3
 import os
 import csv
-
+#comment
 ruta_db = os.path.join(os.getcwd(), 'PlanetsExplorer.db')
 
 def dbConnection():
